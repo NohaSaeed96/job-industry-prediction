@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>Classification</title>
+	</head>
+	<body>
+		<h1>Job Industry Predictions</h1>
+		<form class="p-3 text-center" action='/', method="post" enctype="multipart/form-data">
+			<input class="form-control" type="text" name="infile" >
+			<input class="btn btn-primary mt-3" type="submit" name="predict" >
+		</form>
+		{% if prediction %}
+			<p class="text-center">the job is in the {{prediction}} field</p>
+		{% endif %}
+	</body>
+</html>
